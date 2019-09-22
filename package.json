@@ -1,0 +1,23 @@
+{
+  "name": "aws-s3-browser-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@appsparkler.github:appsparkler/aws-s3-browser-example.git",
+  "author": "Aakash Shah <aakash.shah@publicissapient.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack -w",
+    "serve": "reload -p 8081 -w dist -b -v",
+    "serve:build": "concurrently \"yarn serve\" \"yarn build\""
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "cross-env": "^6.0.0",
+    "reload": "^3.0.1",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.533.0"
+  }
+}
